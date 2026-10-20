@@ -8,7 +8,7 @@ The static website served at **https://getkurafuto.app** via GitHub Pages (`.git
 
 | File | Purpose |
 |---|---|
-| `index.html` | Landing page |
+| `index.html` | Landing page; its hero is an interactive, CSS-only copy of the Servers screen with sample data (Stop, Start, Restart, Console) |
 | `privacy/index.html` | Privacy policy – the App Store privacy policy URL |
 | `datenschutz/index.html` | German translation of the privacy policy |
 | `impressum/index.html` | Legal notice (Impressum, § 5 DDG), in German; linked from every page's footer and from Settings in the app |
@@ -27,6 +27,7 @@ The static website served at **https://getkurafuto.app** via GitHub Pages (`.git
 - Animations are CSS only and live inside `@media (prefers-reduced-motion: no-preference)`; without them every page must look finished. Japanese ornaments use system Mincho fonts and are `aria-hidden`.
 - Adding anything that loads from another origin needs an ADR in the app repository and updates to `PRIVACY.md` and the threat model there.
 - Never link the app's private source repository.
+- The hero demo stays CSS-only: radio inputs before `.screen` hold the state, labels inside it are the buttons. It shows sample data only, keeps its finished look without motion, and its radios carry `aria-label`s for keyboard and screen reader users.
 - Screenshots show the demo mode only, never a real panel. Give every one alt text and `width`/`height`; all but the hero load lazily.
 
 ## Git
