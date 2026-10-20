@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy Policy – Kurafuto</title>
+  <meta name="description" content="Kurafuto collects nothing. The app talks only to the server panel you add.">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/icon.svg" alt=""> Kurafuto <small lang="ja">クラフト</small></a>
+      <nav class="site" aria-label="Main">
+        <a href="/privacy/" aria-current="page">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <article class="doc">
+        <p class="kicker rise" aria-hidden="true"><span lang="ja">個人情報</span> Policy</p>
+        <h1 class="rise d1">Privacy Policy</h1>
+        <p class="meta rise d2">Last updated: 20 October 2026 · <a href="/datenschutz/" lang="de" hreflang="de">Deutsche Fassung</a></p>
+
+        <p><strong>Short version: Kurafuto collects nothing. We do not have a server, and we never see your data.</strong></p>
+
+        <h2>Who is responsible</h2>
+        <p>The controller under the EU General Data Protection Regulation (GDPR) for the app and for getkurafuto.app is:</p>
+        <address>Mike Mieszczanin<br>Schönbornstraße 26<br>96138 Burgebrach<br>Germany<br><a href="mailto:mail@miquno.com">mail@miquno.com</a></address>
+        <p>There is no data protection officer; none is required.</p>
+
+        <h2>What Kurafuto is</h2>
+        <p>Kurafuto is an app for controlling your own, self-hosted game server panel (Crafty Controller 4) from your iPhone. It is an unofficial app and is not affiliated with Arcadia Technology, Mojang or Microsoft.</p>
+
+        <h2>What we collect</h2>
+        <p>Nothing. Kurafuto contains no analytics, no crash reporting, no advertising, no tracking and no third-party SDKs. The developer does not operate any server that the app talks to. The only data we can receive comes from outside the app: emails you send us and the crash reports Apple shares without your name if you allow it (see below).</p>
+
+        <h2>Where your data goes</h2>
+        <p>Kurafuto connects <strong>only</strong> to the panel address you enter. Everything you do in the app – signing in, starting servers, reading logs, editing files, uploading files you pick – is sent directly from your device to your panel and nowhere else.</p>
+
+        <h2>What is stored on your device</h2>
+        <div class="scroll">
+          <table class="table">
+            <thead><tr><th>Data</th><th>Where</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Access token for your panel</td><td>iOS Keychain, this device only</td><td>So you stay signed in</td></tr>
+              <tr><td>Panel name, address, username, certificate fingerprint</td><td>App storage, encrypted by iOS</td><td>So you can switch between panels</td></tr>
+              <tr><td>App settings (e.g. Face ID lock, appearance)</td><td>App storage</td><td>Your preferences</td></tr>
+              <tr><td>For widgets: panel name, server IDs and names, status, versions, player counts and the names of up to eight players online, CPU and RAM of the last hour, each server's RAM limit, time and backup configuration name of the newest backup, time of the values, your color theme, whether the app lock is on</td><td>Storage shared only between the app and its widgets, readable after the first unlock</td><td>So the widgets can show your servers without contacting the panel</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Face ID, Touch ID and your passcode are checked by iOS; Kurafuto only learns whether the check succeeded and never sees biometric data.</p>
+        <p>Your password is never stored; it is only used once to obtain a token from your panel. Server data, logs and files are shown while you look at them and are not saved by Kurafuto, except the short widget summary above. Widgets never contact your panel, and they never show the panel address or your username. Player names appear only on Home Screen widgets and are hidden while your iPhone is locked; Lock Screen widgets show only numbers. If the Face ID lock is on, iOS hides all widget content while your iPhone is locked.</p>
+        <p>Signing out of a panel in Settings removes its token and its entry in the panel list; signing out or switching panels also clears the widget summary. Deleting the app removes everything else. iOS keeps Keychain entries after an app is deleted, so if you delete Kurafuto without signing out first, its tokens stay on this device – unreadable for other apps and not part of any backup – until you install Kurafuto again, which deletes them when it first starts. To remove them right away, sign out of each panel before deleting the app.</p>
+
+        <h2>Live Activities</h2>
+        <p>If you start a server or a backup in Kurafuto, a Live Activity on the Lock Screen and in the Dynamic Island shows its progress: the server's name, how long it has been starting or how far the backup is, and whether it worked. Kurafuto updates it from your iPhone; it uses no push service, so nothing is sent to Apple or anyone else for it. iOS keeps the activity until it ends and may also show it in StandBy and on a paired Apple Watch. If the Face ID lock is on, the activity leaves out the server's name. You can turn Live Activities off in the iPhone's Settings under Kurafuto.</p>
+
+        <h2>Siri and Shortcuts</h2>
+        <p>If you use Kurafuto with Siri or Shortcuts, the actions run inside the app on your iPhone and talk only to your panel. To recognize your servers by name, iOS learns their names from Kurafuto; Siri requests are handled by Apple under its own privacy terms. Your panel token never leaves the app.</p>
+        <h2>Your panel</h2>
+        <p>Your panel is operated by you (or whoever runs it). What the panel logs or stores – for example sign-in attempts or IP addresses – is governed by that panel and its operator, not by Kurafuto.</p>
+
+        <h2>This website</h2>
+        <p>getkurafuto.app is a static website hosted on GitHub Pages by GitHub, Inc. (88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). It sets no cookies and uses no analytics, fonts, scripts or embeds from third parties. To deliver the pages, GitHub processes your IP address and technical request data (requested page, time, browser) and may keep them in short-lived server logs for security. The legal basis is our legitimate interest in a secure, working website (Art. 6(1)(f) GDPR). GitHub is certified under the EU-U.S. Data Privacy Framework, which the EU Commission recognizes as adequate (Art. 45 GDPR). See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+
+        <h2>Email</h2>
+        <p>If you email <a href="mailto:support@getkurafuto.app">support@getkurafuto.app</a> or <a href="mailto:mail@miquno.com">mail@miquno.com</a>, your email address, your message and any attachments are used only to answer you (Art. 6(1)(b) GDPR for questions about the app, otherwise Art. 6(1)(f) GDPR). They are stored by our email provider and deleted when the conversation is finished and no longer needed.</p>
+
+        <h2>App Store</h2>
+        <p>Kurafuto is distributed through Apple's App Store. Downloads, updates and the App Store account are handled by Apple as its own controller under its privacy policy; we do not receive your name, Apple Account or payment details. If you have turned on “Share with App Developers” in the iPhone's Settings (Privacy &amp; Security → Analytics &amp; Improvements), Apple passes crash reports and usage statistics to us without your name or contact details, based on your consent to Apple (Art. 6(1)(a) GDPR). You can withdraw it in the same place at any time. If you test a beta through TestFlight, Apple also shares your feedback, screenshots and the email address you were invited with.</p>
+
+        <h2>Your rights</h2>
+        <p>Under the GDPR you have the right to access the personal data we hold about you (Art. 15), to have it corrected (Art. 16) or erased (Art. 17), to restrict its processing (Art. 18), to receive it in a portable format (Art. 20) and to withdraw a consent at any time with effect for the future (Art. 7(3)). You may <strong>object</strong> at any time to processing based on our legitimate interests (Art. 21). Just send an email to <a href="mailto:mail@miquno.com">mail@miquno.com</a>.</p>
+        <p>You also have the right to lodge a complaint with a supervisory authority (Art. 77), for example the one responsible for us: Bayerisches Landesamt für Datenschutzaufsicht, Promenade 18, 91522 Ansbach, Germany, <a href="https://www.lda.bayern.de">lda.bayern.de</a>.</p>
+        <p>You are not required to provide any personal data. Kurafuto makes no automated decisions about you, including profiling (Art. 22).</p>
+
+        <h2>Children</h2>
+        <p>Kurafuto is not directed at children. The app collects no data from anyone.</p>
+
+        <h2>Changes</h2>
+        <p>Changes to this policy are published on this page with the date of the last update.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about privacy: <a href="mailto:mail@miquno.com">mail@miquno.com</a> or <a href="mailto:support@getkurafuto.app">support@getkurafuto.app</a>. Security issues: <a href="mailto:support@getkurafuto.app">support@getkurafuto.app</a> with the subject “Security”.</p>
+      </article>
+      <p class="doc-aside" lang="ja" aria-hidden="true">個人情報保護方針</p>
+    </div>
+  </main>
+
+  <svg class="wave" aria-hidden="true">
+    <defs>
+      <g id="fan"><circle r="24"/><circle r="19"/><circle r="14"/><circle r="9"/><circle r="4"/></g>
+      <pattern id="seigaiha" width="48" height="24" patternUnits="userSpaceOnUse">
+        <use href="#fan" x="0" y="0"/><use href="#fan" x="48" y="0"/>
+        <use href="#fan" x="24" y="12"/>
+        <use href="#fan" x="0" y="24"/><use href="#fan" x="48" y="24"/>
+        <use href="#fan" x="24" y="36"/>
+      </pattern>
+    </defs>
+    <rect width="4800" height="96" fill="url(#seigaiha)"/>
+  </svg>
+
+  <footer class="site">
+    <div class="wrap">
+      <div>
+        <p class="sig"><img src="/icon.svg" alt=""> Kurafuto</p>
+        <p>Kurafuto is an unofficial app and is not affiliated with or endorsed by Arcadia Technology, Mojang or Microsoft.</p>
+      </div>
+      <p class="links"><a href="/">Home</a> · <a href="/impressum/">Legal notice</a> · <a href="mailto:support@getkurafuto.app">support@getkurafuto.app</a></p>
+    </div>
+  </footer>
+</body>
+</html>
